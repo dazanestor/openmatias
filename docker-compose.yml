@@ -1,0 +1,9 @@
+services:
+  opendonita:
+    build: .
+    container_name: opendonita
+    ports:
+      - "80:80"
+    volumes:
+      - ./opendonita-data:/root/.opendonita
+    restart: unless-stopped

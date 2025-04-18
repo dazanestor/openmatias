@@ -19,6 +19,7 @@ RUN apt-get update && \
 WORKDIR /opt/congaserver
 
 EXPOSE 80
+EXPOSE 20008
 
 ENV PYTHONUNBUFFERED=1
 

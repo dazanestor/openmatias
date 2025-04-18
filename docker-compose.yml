@@ -4,7 +4,7 @@ services:
     container_name: opendonita
     ports:
       - "80:80"
-      - "2008:2008"
+      - "20008:20008"
     volumes:
       - ./opendonita-data:/root/.opendonita
     restart: unless-stopped

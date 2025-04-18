@@ -11,6 +11,11 @@ RUN apt-get update && \
     cp -r /tmp/opendonita/congaModules /opt/congaserver/congaModules && \
     cp -r /tmp/opendonita/html /opt/congaserver/html && \
     rm -rf /tmp/opendonita && \
+    # Clonar el repositorio con el conga.css corregido
+    git clone https://github.com/dazanestor/openmatias.git /tmp/openmatias && \
+    cp /tmp/openmatias/conga.css /opt/congaserver/html/conga.css && \
+    rm -rf /tmp/openmatias && \
+
     apt-get remove -y git && \
     apt-get autoremove -y && \
     apt-get clean && \

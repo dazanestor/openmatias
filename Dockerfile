@@ -20,4 +20,6 @@ WORKDIR /opt/congaserver
 
 EXPOSE 80
 
+ENV PYTHONUNBUFFERED=1
+
 CMD ["python3", "congaserver.py"]
